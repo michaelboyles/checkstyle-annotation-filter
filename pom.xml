@@ -7,10 +7,38 @@
     <groupId>uk.co.michaelboyles</groupId>
     <artifactId>checkstyle-annotation-filter</artifactId>
     <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <name>Checkstyle Annotation Filter</name>
+    <description>Filter Checkstyle violations to remove elements annotated with a given set of annotations.</description>
+    <url>https://github.com/michaelboyles/checkstyle-annotation-filter</url>
+
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License, version 2.1</name>
+            <url>https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Michael Boyles</name>
+            <email>michaelboyles@hotmail.co.uk</email>
+            <url>https://github.com/michaelboyles</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/michaelboyles/checkstyle-annotation-filter.git</connection>
+        <developerConnection>scm:git:ssh://github.com:michaelboyles/checkstyle-annotation-filter.git</developerConnection>
+        <url>https://github.com/michaelboyles/checkstyle-annotation-filter/tree/master</url>
+    </scm>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
@@ -20,4 +48,35 @@
             <version>7.8</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.0.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
