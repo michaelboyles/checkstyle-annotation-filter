@@ -2,6 +2,27 @@ Filter Checkstyle violations to remove elements annotated with a given set of an
 
 This was primarily designed so that classes or methods marked as @Deprecated will not throw violations - there's no point refactoring something already marked for removal.
 
+## Dependency
+
+The dependency is available from [jitpack.io](https://jitpack.io).
+
+```xml
+<dependency>
+    <groupId>com.github.michaelboyles</groupId>
+    <artifactId>checkstyle-annotation-filter</artifactId>
+    <version>1.0.1</version>
+</dependency>
+```
+
+and, for example
+
+```xml
+<repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+</repository>
+```
+
 ## Usage
 
 The filter consists of two elements
