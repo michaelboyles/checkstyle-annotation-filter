@@ -23,12 +23,12 @@ Your Checkstyle configuration must include both of these, for example:
         <module name="FinalLocalVariable" />
         <!-- more checks -->
         
-        <module name="uk.co.michaelboyles.checkstyle.annotationfilter.AnnotationFilter">
+        <module name="com.github.michaelboyles.checkstyle.annotationfilter.AnnotationFilter">
             <property name="class" value="Deprecated"/>
             <property name="class" value="SuppressWarnings"/>
         </module>
     </module>
-    <module name="uk.co.michaelboyles.checkstyle.annotationfilter.AnnotationCheck" />
+    <module name="com.github.michaelboyles.checkstyle.annotationfilter.AnnotationCheck" />
 </module>
 ```
 
