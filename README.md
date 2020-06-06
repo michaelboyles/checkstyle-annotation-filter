@@ -1,5 +1,3 @@
-# Checkstyle Annotation Filter
-
 Filter Checkstyle violations to remove elements annotated with a given set of annotations.
 
 This was primarily designed so that classes or methods marked as @Deprecated will not throw violations - there's no point refactoring something already marked for removal.
