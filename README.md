@@ -1,3 +1,5 @@
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/michaelboyles/checkstyle-annotation-filter/Java%20CI%20with%20Maven) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/michaelboyles/checkstyle-annotation-filter?sort=semver) ![GitHub](https://img.shields.io/github/license/michaelboyles/checkstyle-annotation-filter)
+
 Filter Checkstyle violations to remove elements annotated with a given set of annotations.
 
 This was primarily designed so that classes or methods marked as @Deprecated will not throw violations - there's no point refactoring something already marked for removal.
