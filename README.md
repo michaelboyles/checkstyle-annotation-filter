@@ -1,4 +1,4 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/michaelboyles/checkstyle-annotation-filter/Java%20CI%20with%20Maven) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/michaelboyles/checkstyle-annotation-filter?sort=semver) ![GitHub](https://img.shields.io/github/license/michaelboyles/checkstyle-annotation-filter)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/michaelboyles/checkstyle-annotation-filter/maven.yml?branch=master)](https://github.com/michaelboyles/checkstyle-annotation-filter/actions) [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/michaelboyles/checkstyle-annotation-filter?sort=semver)](https://github.com/michaelboyles/checkstyle-annotation-filter/releases) [![GitHub](https://img.shields.io/github/license/michaelboyles/checkstyle-annotation-filter)](https://github.com/michaelboyles/checkstyle-annotation-filter/blob/master/LICENSE)
 
 Filter Checkstyle violations to remove elements annotated with a given set of annotations.
 
